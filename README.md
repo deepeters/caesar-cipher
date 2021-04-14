@@ -27,7 +27,8 @@ Step 6: return result.
 
 # BDD
 
-#| Encoding |  Decoding |
+# | Encoding |  Decoding |
+
 A String of lower case letters, called Text. An Integer between 0-25 denoting the required shift. Procedure:
 
 Traverse the given text one character at a time . For each character, transform the given character as per the rule, depending on whether we’re encrypting or decrypting the text. Return the new string generated. Program that receives a Text (string) and Shift value( integer) and returns the encrypted text.
