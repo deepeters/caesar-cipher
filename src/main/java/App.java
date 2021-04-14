@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         try(Scanner reader = new Scanner(System.in)) {
-            System.out.print("Enter shift: ");
+            System.out.print("Enter text: ");
             int shift = reader.nextInt();
 
             reader.nextLine();
