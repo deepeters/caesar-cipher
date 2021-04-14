@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        try(Scanner reader = new Scanner(System.in))
-        {
+        try(Scanner reader = new Scanner(System.in)) {
             System.out.print("Enter shift: ");
             int shift = reader.nextInt();
 
@@ -15,5 +14,6 @@ public class App {
             String input = reader.nextLine();
 
             System.out.println("Encoded text: " + CaesarCipher.encodeString(input, shift));
+        }
     }
 }
