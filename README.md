@@ -7,17 +7,34 @@ This is a Java implementation of the Command Line Caesar Cipher which is a form 
 <img src="images/caesar-cipher.png">
 
 ### Setup Instructions
-The operations of the project are fairly straighforward. 
-The application ia a Java project and makes use of bootstrap as well as a custom CSS file.
-Google Chrome is highly recommend to run the program.
+This is a simple Cipher tool written in JAVA to encrypt a string of text. This tool also take in an encrpted string of text and decrypts it too. This was written in response to the Terragon Ife Group questions to join the team.
 
-* This website requires that you have data access to internet data.
+The Caesar Cipher is a famous implementation of early day encryption. It would take a sentence and reorganize it based on a key that is enacted upon the alphabet. This makes it difficult to read and allows messages to be passed undetected.
 
+The steps used in the program:
+
+Step 1: Identify the character within the sentence.
+
+Step 2: Find that character’s location within the alphabet.
+
+Step 3: Identify that characters location + the key in the alphabet.
+
+Step 4: Build a new sentence using the new characters in place of the original characters.
+
+Step 5: repeat until sentence length is reached. (For loop).
+
+Step 6: return result.
 
 # BDD
 
-#| Inputs |  Description |
-|
+#| Encoding |  Decoding |
+A String of lower case letters, called Text. An Integer between 0-25 denoting the required shift. Procedure:
+
+Traverse the given text one character at a time . For each character, transform the given character as per the rule, depending on whether we’re encrypting or decrypting the text. Return the new string generated. Program that receives a Text (string) and Shift value( integer) and returns the encrypted text.
+
+We can either write another function decrypt similar to encrypt, that’ll apply the given shift in the opposite direction to decrypt the original text. However we can use the cyclic property of the cipher under modulo , hence we can simply observe
+
+Cipher(n) = De-cipher(26-n)
 
 
 # Contact Infomation:
@@ -28,12 +45,8 @@ Google Chrome is highly recommend to run the program.
 
 ### Technology Used
 1. Java
-2. HTML
-3. CSS
-
 
 ### Frameworks Used
-1. Git
-2. Bootstrap
+1. Gradle
 
 ### LICENSE: [MIT LICENSE](https://raw.githubusercontent.com/deepeters/caesar-cipher/master/LICENSE)
